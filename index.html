@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica21</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function getvalores(){
+            let div = document.getElementById("div4");
+            console.log(div);
+            console.log(div.getAttribute(`class`));
+            console.log(div.getAttribute(`valorpersonalizado`));
+        }
+    </script>
 </head>
 <body>
     <h1>Práctica 21</h1>
     <h2>Jorge Arturo Vazquez Tejeda</h2>
     <p>Hola Mundo...!!!</p>
     <div><img src="img/logo.png"></div>
+    <hr>
+    <div id="div1" class="cuadro">Div 1</div>
+    <div id="div2" class="cuadro">Div 2</div>
+    <div id="div3" class="cuadro">Div 3</div>
+    <div id="div4" class="cuadro" valorpersonalizado="7siete">Div 4</div>
+    <div id="div5" class="cuadro">Div 5</div>
+    <button type="button" onclick="getvalores()">Obtener Valores</button>
     <!--Comentario-->
 </body>
 </html>
